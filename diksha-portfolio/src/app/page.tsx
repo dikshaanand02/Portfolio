@@ -795,7 +795,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
               >
                 <motion.a 
-                  href="/assets/Diksha_Anand_COE_Lead_IM_Resume.pdf" 
+                  href="https://github.com/dikshaanand02/Portfolio/blob/main/diksha-portfolio/public/Resume/Diksha%20Anand%20-%20COE%20Lead%20IM%20Resume.pdf" 
                   className="btn-primary px-8 py-4 rounded-xl font-bold text-text-dark bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(176, 101, 155, 0.4)" }}
                   whileTap={{ scale: 0.95 }}
@@ -964,7 +964,7 @@ export default function Home() {
               </ul>
 
               <motion.a 
-                href="/assets/Diksha_Anand_COE_Lead_IM_Resume.pdf" 
+                href="https://github.com/dikshaanand02/Portfolio/blob/main/diksha-portfolio/public/Resume/Diksha%20Anand%20-%20COE%20Lead%20IM%20Resume.pdf" 
                 className="btn-primary inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
