@@ -515,9 +515,9 @@ export default function Home() {
     if (!form.current) return;
 
     // Use environment variables for EmailJS configuration
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_hk72t6g";
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_cwuq73n";
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "y5eTahrvOdcZlI7gB";
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_e8mupry";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_uoy59yi";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "1XDsoCkEZO48q7ekK";
 
     emailjs
       .sendForm(
@@ -2157,7 +2157,7 @@ export default function Home() {
                   transition={{ duration: 0.4, delay: 0.6 }}
                   whileHover={{ y: -2 }}
                 >
-                  <label className="block text-sm font-medium text-on-light-bg mb-2">
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
                     Full Name *
                   </label>
                   <div className="relative">
@@ -2169,7 +2169,7 @@ export default function Home() {
                       value={formData.user_name}
                       onChange={handleInputChange}
                       placeholder="Enter your full name"
-                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-on-light-bg placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm hover:border-purple-300"
+                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm hover:border-purple-300"
                       required
                     />
                     {formData.user_name && (
@@ -2196,7 +2196,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.7 }}
                 >
-                  <label className="block text-sm font-medium text-on-light-bg mb-2">
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
                     Email Address *
                   </label>
                   <div className="relative">
@@ -2209,7 +2209,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       type="email"
-                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-on-light-bg placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
+                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
                       required
                     />
                     {formData.user_email && formData.user_email.includes('@') && (
@@ -2236,7 +2236,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.8 }}
                 >
-                  <label className="block text-sm font-medium text-on-light-bg mb-2">
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
                     Subject
                   </label>
                   <div className="relative">
@@ -2248,7 +2248,7 @@ export default function Home() {
                       value={formData.subject}
                       onChange={handleInputChange}
                       placeholder="What is this regarding?"
-                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-on-light-bg placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
+                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
                     />
                   </div>
                 </motion.div>
@@ -2261,7 +2261,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.9 }}
                 >
-                  <label className="block text-sm font-medium text-on-light-bg mb-2">
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
                     Message *
                   </label>
                   <div className="relative">
@@ -2274,7 +2274,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       placeholder="Tell me about your requirements, questions, or feedback..."
                       rows={6}
-                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-on-light-bg placeholder-gray-500 resize-none focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
+                      className="w-full rounded-xl pl-10 px-4 py-3 bg-gray-50 border-2 border-gray-200 transition-all duration-300 text-gray-900 placeholder-gray-500 resize-none focus:outline-none focus:ring-0 focus:border-purple-500 shadow-sm"
                       required
                     />
                     {formData.message && formData.message.length > 10 && (
