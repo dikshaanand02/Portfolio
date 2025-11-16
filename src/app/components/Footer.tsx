@@ -212,7 +212,7 @@ const Footer = () => {
               transition={{ duration: 0.3, delay: 1 }}
               whileHover={{ y: -3 }}
             >
-              <a href="https://github.com/dikshaanand02/Portfolio/blob/main/diksha-portfolio/public/Resume/Diksha%20Anand%20-%20COE%20Lead%20IM%20Resume.pdf" className="hover:text-primary transition-colors font-medium" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/dikshaanand02/Portfolio/blob/main/public/Resume/Diksha%20Anand%20-%20COE%20Lead%20IM%20Resume.pdf" className="hover:text-primary transition-colors font-medium" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </motion.div>
