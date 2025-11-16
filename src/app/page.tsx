@@ -1304,44 +1304,34 @@ export default function Home() {
                       <div className="ml-4 sm:ml-6 w-full">
                         <div className="p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-gray-700 bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-md shadow-lg glow">
                           {/* Top row */}
-                          <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0">
-                            <motion.div 
-                              whileHover={{ scale: 1.1 }}
-                              className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 pulse-glow"
+                          <div className="text-center sm:text-left">
+                            <motion.h3 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.2 }}
+                              className="text-lg sm:text-xl font-bold text-white text-gradient"
                             >
-                              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                                <span className="text-gray-500 text-xs text-center px-1">Company Logo</span>
-                              </div>
-                            </motion.div>
-                            <div className="text-center sm:text-left sm:ml-4">
-                              <motion.h3 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.2 }}
-                                className="text-lg sm:text-xl font-bold text-white text-gradient"
-                              >
-                                {exp.role}
-                              </motion.h3>
-                              <motion.h4 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.3 }}
-                                className="text-base sm:text-lg text-primary mt-1 font-medium"
-                              >
-                                {exp.company}
-                              </motion.h4>
-                              <motion.p 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.4 }}
-                                className="text-gray-100 mt-2 text-sm sm:text-base"
-                              >
-                                {exp.period}
-                              </motion.p>
-                            </div>
+                              {exp.role}
+                            </motion.h3>
+                            <motion.h4 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.3 }}
+                              className="text-base sm:text-lg text-primary mt-1 font-medium"
+                            >
+                              {exp.company}
+                            </motion.h4>
+                            <motion.p 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.4 }}
+                              className="text-gray-100 mt-2 text-sm sm:text-base"
+                            >
+                              {exp.period}
+                            </motion.p>
                           </div>
 
                           {/* Details */}
@@ -1434,44 +1424,34 @@ export default function Home() {
                       <div className="ml-4 sm:ml-6 w-full">
                         <div className="p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-gray-700 bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-md shadow-lg">
                           {/* Top row */}
-                          <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0">
-                            <motion.div 
-                              whileHover={{ scale: 1.05 }}
-                              className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0"
+                          <div className="text-center sm:text-left">
+                            <motion.h3 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.2 }}
+                              className="text-lg sm:text-xl font-bold text-white"
                             >
-                              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                                <span className="text-gray-500 text-xs text-center px-1">School Logo</span>
-                              </div>
-                            </motion.div>
-                            <div className="text-center sm:text-left sm:ml-4">
-                              <motion.h3 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.2 }}
-                                className="text-lg sm:text-xl font-bold text-white"
-                              >
-                                {edu.institution}
-                              </motion.h3>
-                              <motion.h4 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.3 }}
-                                className="text-base sm:text-lg text-primary mt-1"
-                              >
-                                {edu.degree}
-                              </motion.h4>
-                              <motion.p 
-                                initial={{ x: -10, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: 0.4 }}
-                                className="text-gray-100 mt-2 text-sm sm:text-base"
-                              >
-                                {edu.period}
-                              </motion.p>
-                            </div>
+                              {edu.institution}
+                            </motion.h3>
+                            <motion.h4 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.3 }}
+                              className="text-base sm:text-lg text-primary mt-1"
+                            >
+                              {edu.degree}
+                            </motion.h4>
+                            <motion.p 
+                              initial={{ x: -10, opacity: 0 }}
+                              whileInView={{ x: 0, opacity: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.5, delay: 0.4 }}
+                              className="text-gray-100 mt-2 text-sm sm:text-base"
+                            >
+                              {edu.period}
+                            </motion.p>
                           </div>
 
                           {/* Details */}
